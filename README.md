@@ -1,6 +1,6 @@
 # Dissipativity analysis repository
 
-> Codes in dissipativity analysis of linear and nonlinear systems.
+> Codes in dissipativity and passivity analysis of linear and nonlinear systems.
 
 ## 📝 License
 
