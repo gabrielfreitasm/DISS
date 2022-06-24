@@ -34,7 +34,7 @@ R = sdpvar(size(B,2), size(B,2), 'symmetric', 'real');
 LMI1 = P - 1e-5*eye(size(P)) >= 0;
 
 LMI2 = [A'*P*A - P - C'*Q*C, A'*P*B - C'*S - C'*Q*D;
-    B'*P*A - S'*C - D'*Q*C, - D'*Q*D - S'*D - D'*S - R] <= 0;
+    B'*P*A - S'*C - D'*Q*C, B'*P*B - D'*Q*D - S'*D - D'*S - R] <= 0;
 
 LMIs = [LMI1, LMI2];
 
